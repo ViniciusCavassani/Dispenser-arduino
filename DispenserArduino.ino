@@ -15,8 +15,8 @@ Servo servo;
 // CONFIGURACAO WI-FI E NTP
 // =====================================================
 
-const char* WIFI_SSID = "ViniciusMesh";
-const char* WIFI_SENHA = "Amores#344";
+const char* WIFI_SSID = "SEU_WIFI";
+const char* WIFI_SENHA = "SUA_SENHA";
 
 const long FUSO_HORARIO_SEGUNDOS = -3L * 3600L;
 const int HORARIO_VERAO_SEGUNDOS = 0;
