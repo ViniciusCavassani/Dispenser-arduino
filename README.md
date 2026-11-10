@@ -6,11 +6,11 @@ Protótipo educacional de lembrete de medicamentos. O horário é digitado em um
 
 ## Versões
 
-### Versão com LED — `dispenser.ino`
+### Versão com LED — `dispenser/dispenser.ino`
 
 Usa o RTC DS1307 para manter data e hora. Digite o horário no formato `HHMM` e pressione `#` para confirmar. Pressione `*` para limpar a digitação. No horário programado, o LED no GPIO 13 acende por cerca de 30 segundos; depois, o horário é apagado e pode ser cadastrado outro.
 
-### Versão com Wi-Fi, NTP e servo — `DispenserArduino.ino`
+### Versão com Wi-Fi, NTP e servo — `DispenserArduino/DispenserArduino.ino`
 
 Tenta buscar a hora pela internet e atualizar o RTC DS1307. Se a conexão falhar, tenta usar a hora guardada no RTC. O alarme é diário enquanto o programa estiver ligado. No horário programado, o servo no GPIO 25 vai à posição de alerta por cerca de 30 segundos e retorna à posição inicial.
 
