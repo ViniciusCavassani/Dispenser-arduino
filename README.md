@@ -1,6 +1,6 @@
 # Dispenser de medicamentos com ESP32
 
-Protótipo educacional de lembrete de medicamentos. O horário é digitado em um teclado 4x4, e o relógio e as mensagens aparecem em um LCD 16x2. O repositório contém duas versões independentes. A montagem física também foi realizada. A [simulação no Wokwi](https://wokwi.com/projects/463943057892354049) corresponde à versão com LED.
+Protótipo educacional de lembrete de medicamentos. O horário é digitado em um teclado 4x4, e o relógio e as mensagens aparecem em um LCD 16x2. O repositório contém duas versões independentes. A montagem física também foi realizada. A [simulação no Wokwi](https://wokwi.com/projects/463943057892354049) corresponde à versão com Servo Motor.
 
 > Este projeto é apenas um protótipo. Ele não confirma a ingestão do medicamento e não deve ser usado como único meio de controle de tratamentos.
 
