@@ -6,15 +6,27 @@ Protótipo educacional de lembrete de medicamentos. O horário é digitado em um
 
 ## Versões
 
-### Versão com LED — `dispenser/dispenser.ino`
+### Versão com LED — [`dispenser.ino`](dispenser/dispenser.ino)
 
 Usa o RTC DS1307 para manter data e hora. Digite o horário no formato `HHMM` e pressione `#` para confirmar. Pressione `*` para limpar a digitação. No horário programado, o LED no GPIO 13 acende por cerca de 30 segundos; depois, o horário é apagado e pode ser cadastrado outro.
 
-### Versão com Wi-Fi, NTP e servo — `DispenserArduino/DispenserArduino.ino`
+### Versão com Wi-Fi, NTP e servo — [`DispenserArduino.ino`](DispenserArduino/DispenserArduino.ino)
 
-Tenta buscar a hora pela internet e atualizar o RTC DS1307. Se a conexão falhar, tenta usar a hora guardada no RTC. O alarme é diário enquanto o programa estiver ligado. No horário programado, o servo no GPIO 25 vai à posição de alerta por cerca de 30 segundos e retorna à posição inicial.
+Tenta buscar a hora pela internet e atualizar o RTC DS1307. Se a conexão falhar, tenta usar a hora guardada no RTC. O servo vai de 0° a 90° durante o alerta. O alarme é diário enquanto o programa estiver ligado. No horário programado, o servo no GPIO 25 vai à posição de alerta por cerca de 30 segundos e retorna à posição inicial.
 
 Os horários ficam apenas na memória do programa e são perdidos quando o ESP32 reinicia.
+
+## Demonstração rápida
+
+1. Confira a hora no LCD. Digite o próximo minuto em `HHMM` e pressione `#`. Por exemplo, se o LCD mostrar `14:29`, digite `1430#`.
+2. Confira a mensagem `TOMAR REMEDIO` e observe o LED ou o servo.
+3. Após cerca de 30 segundos, confira se o LED apagou ou se o servo voltou a 0°. Reinicie o ESP32 para verificar que o alarme precisa ser cadastrado novamente.
+
+`*` limpa os dígitos em edição. Ao confirmar com `#` um horário incompleto ou inválido, a versão LED limpa o alarme salvo e a versão servo preserva o alarme anterior.
+
+## Diagnóstico
+
+Abra o Monitor Serial em `115200` baud. Se o RTC não for encontrado, confira SDA e SCL. Se a versão servo mostrar `SEM HORA VALIDA`, confira os registros de Wi-Fi, NTP e RTC no serial. Essa versão exige hora válida para cadastrar o alarme.
 
 ## Componentes
 
