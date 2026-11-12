@@ -85,4 +85,3 @@ Na versão com LED, o RTC pode ser ajustado inicialmente pela linha comentada `r
 - Salvar o horário na memória não volátil para preservar a configuração após reiniciar.
 - Permitir mais de um lembrete.
 - Criar uma interface para cadastrar os horários.
-- Desenvolver um mecanismo físico com compartimentos e validar sua operação.
