@@ -6,7 +6,11 @@ Protótipo educacional de lembrete de medicamentos. O horário é digitado em um
 
 ## Protótipo físico em desenvolvimento
 
-As imagens registram a montagem eletrônica em protoboard e um disco circular impresso em 3D, com setores identificados por símbolos de sol e lua.
+O registro reúne a modelagem 3D das peças no Blender, a montagem eletrônica em protoboard e o disco circular impresso em 3D, com setores identificados por símbolos de sol e lua.
+
+### Modelo 3D no Blender
+
+![Peças do dispenser rotativo modeladas no Blender](images/modelo-3d-blender.jpg)
 
 ### Montagem eletrônica
 
