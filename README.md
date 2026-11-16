@@ -4,6 +4,20 @@ Protótipo educacional de lembrete de medicamentos. O horário é digitado em um
 
 > Este projeto é apenas um protótipo. Ele não confirma a ingestão do medicamento e não deve ser usado como único meio de controle de tratamentos.
 
+## Protótipo físico em desenvolvimento
+
+As imagens registram a montagem eletrônica em protoboard e um disco circular impresso em 3D, com setores identificados por símbolos de sol e lua.
+
+### Montagem eletrônica
+
+![Montagem do protótipo com ESP32, RTC, LCD, teclado e buzzer](images/prototipo-eletronico.jpg)
+
+### Disco impresso em 3D
+
+![Disco circular impresso em 3D com identificações de sol e lua](images/disco-organizador-3d.jpg)
+
+> **Etapa atual:** a integração do disco com o servo e a validação da rotação e da liberação das doses ainda estão em desenvolvimento. As versões de lembrete descritas abaixo não comprovam a dispensação física de medicamentos.
+
 ## Versões
 
 ### Versão com LED — [`dispenser.ino`](dispenser/dispenser.ino)
